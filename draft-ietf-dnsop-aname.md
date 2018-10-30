@@ -95,10 +95,10 @@ It can be desirable to provide web sites (and other services) at a
 bare domain name (such as `example.com`) as well as a service-specific
 subdomain (`www.example.com`).
 
-If the web site is hosted by a third-party provider, the ideal way to
-provision its name in the DNS is using a CNAME record, so that the
-third party provider retains control over the mapping from names to IP
-address(es). It is now common for name-to-address mappings to be
+If the web site is hosted by a third-party provider, provisioning its
+name in the DNS using a CNAME record allows the provider to alter the
+mapping from names to IP address(es) without having to update the site
+owner's DNS. It is now common for name-to-address mappings to be
 highly dynamic, dependent on client location, server load, etc.
 
 However, CNAME records cannot coexist with other records. (The reason
